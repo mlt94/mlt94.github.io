@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - MLT94</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        header { margin-bottom: 20px; }
-        nav a { margin-right: 15px; text-decoration: none; color: blue; }
-        .headshot { width: 150px; height: 150px; border-radius: 50%; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        }
+        header { 
+            margin-bottom: 20px; 
+        }
+        nav a { 
+            margin-right: 15px; 
+            text-decoration: none; 
+            color: blue; 
+        }
+        .headshot { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+        }
+        .custom-image {
+            width: 8%; 
+            height: auto; 
+        }
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .github-link img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .github-link:hover {
+            color: #0366d6;
+        }
     </style>
 </head>
 <body>
@@ -18,20 +52,22 @@
             <a href="books.html">My Reading List</a>
         </nav>
     </header>
-<style>
-    .custom-image {
-        width: 8%; 
-        height: auto; 
-    }
-    </style>
+
     <section>
         <img src="images/headshot.jpg" alt="My Headshot" class="custom-image">
         <p>Thank you for visiting my research profile!</p>
         <p>I am a psychologist-turned-computer scientist, currently pursuing a PhD at the IT University of Copenhagen and at <a href="https://www.aicentre.dk/" target="_blank">the Pioneer Centre for Artificial Intelligence</a>. </p>
         <p>My passion is the intersection of psychology and AI, working predominantly in the mental health domain. </p>
         <p>For more details, check out my <a href="CV.pdf" target="_blank">CV</a>.</p>
-        <p>For previous and current projects, visit "Publications". I have also included "My Reading List" here to give you a tour into all the fantastic material that comprises my body of knowledge </p>
+        <p>For previous and current projects, visit "Publications". I have also included "My Reading List" here to give you a tour into all the fantastic material that comprises my body of knowledge. </p>
         <p>Feel free to reach out on mlut@itu.dk. </p>
+        <p>
+            Visit my GitHub profile: 
+            <a href="https://github.com/mlt94" class="github-link" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                My GitHub
+            </a>
+        </p>
     </section>
 </body>
 </html>
