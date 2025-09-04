@@ -107,3 +107,21 @@ a:hover, a:focus-visible { color: var(--accent-hover); text-decoration:underline
 
 ::selection { background: var(--accent); color:#fff; }
 @media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important;} }
+
+.list-grid.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.list-grid.horizontal .card {
+  flex: 1 1 0;
+  min-width: 260px;
+  max-width: 420px;
+}
+@media (max-width: 1100px) {
+  .list-grid.horizontal {
+    flex-direction: column;
+  }
+}
