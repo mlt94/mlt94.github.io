@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - MLT94</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-        }
-        header { 
-            margin-bottom: 20px; 
-        }
-        nav a { 
-            margin-right: 15px; 
-            text-decoration: none; 
-            color: blue; 
-        }
-        .headshot { 
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-        }
-        .custom-image {
-            width: 8%; 
-            height: auto; 
-        }
-        .github-link {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .github-link img {
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-        }
-        .github-link:hover {
-            color: #0366d6;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>About - Martin Lund Trinhammer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Martin Lund Trinhammer</h1>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="books.html">My Reading List</a>
-        </nav>
-    </header>
+<header class="site-header">
+  <div class="brand">
+    <h1 class="site-title">Martin Lund Trinhammer</h1>
+    <p class="tagline">Psychology × AI · Mental Health Research</p>
+  </div>
+  <nav class="main-nav" aria-label="Main">
+    <ul>
+      <li><a class="active" href="index.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="books.html">My Reading List</a></li>
+      <li><a href="CV.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section>
-        <img src="images/headshot.jpg" alt="My Headshot" class="custom-image">
-        <p>Thank you for visiting my research profile!</p>
-        <p>I am a psychologist-turned-computer scientist, currently pursuing a PhD at the IT University of Copenhagen and at <a href="https://www.aicentre.dk/" target="_blank">the Pioneer Centre for Artificial Intelligence</a>. </p>
-        <p>My passion is the intersection of psychology and AI, working predominantly in the mental health domain. </p>
-        <p>For more details, check out my <a href="CV.pdf" target="_blank">CV</a>.</p>
-        <p>For previous and current projects, visit "Publications". I have also included "My Reading List" here to give you a tour into all the fantastic material that comprises my body of knowledge. </p>
-        <p>Feel free to reach out on mlut@itu.dk. </p>
-        <p>
-            <a href="https://github.com/mlt94" class="github-link" target="_blank">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-                GitHub
-            </a>
-        </p>
-    </section>
+<main class="content">
+  <section class="profile">
+    <div class="avatar-wrapper">
+      <img src="images/headshot.jpg" alt="Headshot of Martin Lund Trinhammer" class="avatar">
+    </div>
+    <div class="intro-text">
+      <p class="lead">Thank you for visiting my research profile.</p>
+      <p>I am a psychologist-turned-computer scientist, currently pursuing a PhD at the IT University of Copenhagen and the <a href="https://www.aicentre.dk/" target="_blank" rel="noopener">Pioneer Centre for Artificial Intelligence</a>.</p>
+      <p>I work at the intersection of psychology and AI in the mental health domain.</p>
+      <p>See my <a href="CV.pdf" target="_blank" rel="noopener">CV</a> for more details, browse projects under Publications, and explore the Reading List for influential works.</p>
+      <p>Contact: <a href="mailto:mlut@itu.dk">mlut@itu.dk</a></p>
+      <div class="links-row">
+        <a class="button" href="publications.html">Publications</a>
+        <a class="button ghost" href="CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="icon-link" href="https://github.com/mlt94" target="_blank" rel="noopener">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" width="20" height="20">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Martin Lund Trinhammer</p>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

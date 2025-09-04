@@ -1,74 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Books/Material - MLT94</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-        }
-        header { 
-            margin-bottom: 20px; 
-        }
-        nav a { 
-            margin-right: 15px; 
-            text-decoration: none; 
-            color: blue; 
-        }
-        section {
-            margin-bottom: 40px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Reading List - Martin Lund Trinhammer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Books/Material</h1>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="books.html">Books/Material</a>
-        </nav>
-    </header>
+<header class="site-header">
+  <div class="brand">
+    <h1 class="site-title">Martin Lund Trinhammer</h1>
+    <p class="tagline">Psychology × AI · Mental Health Research</p>
+  </div>
+  <nav class="main-nav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a class="active" href="books.html">My Reading List</a></li>
+      <li><a href="CV.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section>
-        <p>Below is a collection of the books, papers and podcasts that has had a significant influence on me the past 10 years; I include them to give anyone interested both some inspiration and some insights into what consitutes the foundations for my thinking and scientific reasoning</p>
-        
-        <ul>
-            <li><strong>Best Books I've Read:</strong></li>
-            <ul>
-                <li>🔖 David Mackay — <em>Learning Theory: Inference and Algorithms</em> (2003)</li>
-                <li>🔖 Matthew Ball — <em>The Metaverse</em> (2022)</li>
-                <li>🔖 Stephen Jay Gould — <em>Ontogeny and Phylogeny</em> (1977)</li>
-                <li>🔖 Ole Andkjær & Simo Køppe — <em>Freud's Psychoanalysis</em> (1978)</li>
-                <li>🔖 Marcel Proust — <em>In Search of Lost Time</em> (1913–1927) <small>(Can't claim to have read it all!)</small></li>
-                <li>🔖 Brian Hare — <em>Survival of the Friendliest</em> (2020)</li>
-                <li>🔖 Eckhart Tolle — <em>The Power of Now</em> (1997)</li>
-                <li>🔖 Thomas Parr, Giovanni Pezzulo, Karl Friston — <em>Active Inference: The Free Energy Principle in Mind, Brain, and Behavior</em> (2023)</li>
-                <li>🔖 Hartmut Rosa — <em>The Uncontrollability of the World</em> (2020)</li>
-                <li>🔖 Neville Symington — <em>The Making of a Psychotherapist</em> (1996)</li>
-            </ul>
+<main class="content narrow">
+  <h2>My Reading List</h2>
+  <p class="section-intro">Influential books and papers (categorize as needed).</p>
 
-            <li><strong>Best Articles:</strong></li>
-            <ul>
-                <li>✍️ Kleinberg, Jon, et al. "The inversion problem: Why algorithms should infer mental state and not just predict behavior." Perspectives on Psychological Science 19.5 (2024): 827-838.</li>
-                <li>✍️ Kleinberg, Jon, Sendhil Mullainathan, and Manish Raghavan. "The challenge of understanding what users want: Inconsistent preferences and engagement optimization." Management science 70.9 (2024): 6336-6355.</li>
-                <li>✍️ Miller, Kevin, et al. "Cognitive model discovery via disentangled RNNs." Advances in Neural Information Processing Systems 36 (2023): 61377-61394.</li>
-                <li>✍️ Hassabis, Demis, et al. "Neuroscience-inspired artificial intelligence." Neuron 95.2 (2017): 245-258.</li>
-                <li>✍️ Brinkmann, Svend. "Problems of diagnostic psychiatry—and the search for a way forward." Nordic Psychology 76.4 (2024): 446-461.</li>
-                <li>✍️ Chatziagapi, Aggelina, et al. "AV-Flow: Transforming Text to Audio-Visual Human-like Interactions." arXiv preprint arXiv:2502.13133 (2025).</li>
-                <li>✍️ Barrett, Lisa Feldman, et al. "Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements." Psychological science in the public interest 20.1 (2019): 1-68.</li>
-                <li>✍️ Thuesen, Mette. "Terapeutisk forandring gennem terapeutens egne emotionelle Processor" Psyke og Logos 33.1 (2012): 66-86. </li>
-                <li>✍️ Metzger, Sean L., et al. "A high-performance neuroprosthesis for speech decoding and avatar control." Nature 620.7976 (2023): 1037-1046.</li>
-                <li>✍️ Cardeña, Etzel. "What psi research can and cannot say about mind beyond the brain." International Review of Psychiatry (2025): 1-5.</li>
-                <li>✍️ Storm, Lance, Patrizio E. Tressoldi, and Lorenzo Di Risio. "Meta-analysis of free-response studies, 1992–2008: Assessing the noise reduction model in parapsychology." Psychological bulletin 136.4 (2010): 471.</li>
-                <li>✍️ Abi‐Dargham, Anissa, et al. "Candidate biomarkers in psychiatric disorders: state of the field." World Psychiatry 22.2 (2023): 236-262.</li>
-            </ul>
+  <section class="list-grid">
+    <div class="card">
+      <h3>Cognitive Science</h3>
+      <ul>
+        <li>Book / Paper 1</li>
+        <li>Book / Paper 2</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>AI & ML</h3>
+      <ul>
+        <li>Book / Paper A</li>
+        <li>Book / Paper B</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Mental Health</h3>
+      <ul>
+        <li>Title X</li>
+        <li>Title Y</li>
+      </ul>
+    </div>
+  </section>
+</main>
 
-            <li><strong>Podcasts:</strong></li>
-            <ul>
-                <li>🎧 The Double-Edged Sword of AI, with Dr. Ziad Obermeyer, NEJM AI Grand Rounds (2023) Spotify</li>
-            </ul>
-        </ul>
-    </section>
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Martin Lund Trinhammer</p>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

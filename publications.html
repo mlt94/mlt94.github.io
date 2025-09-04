@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Publications - MLT94</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-        }
-        header { 
-            margin-bottom: 20px; 
-        }
-        nav a { 
-            margin-right: 15px; 
-            text-decoration: none; 
-            color: blue; 
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Publications - Martin Lund Trinhammer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Publications</h1>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="books.html">Books/Material</a>
-        </nav>
-    </header>
+<header class="site-header">
+  <div class="brand">
+    <h1 class="site-title">Martin Lund Trinhammer</h1>
+    <p class="tagline">Psychology × AI · Mental Health Research</p>
+  </div>
+  <nav class="main-nav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a class="active" href="publications.html">Publications</a></li>
+      <li><a href="books.html">My Reading List</a></li>
+      <li><a href="CV.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section>
-        <h2>Current Projects</h2>
-        <p>Here is a list of my ongoing research projects:</p>
-        <ul>
-            <li>🔄 One thing I struggle to understand is why we in the psychological domain constantly need expert-annotated labels for our supervised modeling. My intuition is that individuals, through their non-verbal behavior, are constantly "labeling" their internal state of mind themselves. Right now you are "labeling" what you think of reading this, as evident in your facial movements and pupilometry. My next project relates to learning these patterns unsupervised in psychotherapy depending on what emotional topic the client is talking about, which we will synthesize with an LLM. I expect to use a disentangled temporal model for learning this.</li>
-            <li>🔄 I am engaged in plenty of work related to LLM and psychotherapy research, both foundational questions and implementation projects </li>
-            <li>🔄 The area of brain-computer infaces has recently also caught my attention, and I am keeping a sharp eye on it! </li>
-        </ul>
-    </section>
+<main class="content narrow">
+  <h2>Publications</h2>
+  <p class="section-intro">Selected work. (Provide your real list or BibTeX rendering here.)</p>
 
-    <section>
-        <h2>My Research Publications</h2>
-        <p>Here you will find a list of my published papers and articles.</p>
-        <ul>
-            <li>✍️ Trinhammer, M.L., Egmose, I., Krogh, M.T., Stuart, A.C., Vaever, M.S., Brandt, S.B., Grasshof, S. (2025). Evaluating Open-Source Solutions for Computerized Inference of Infant Facial Affect. Developmental Science. In press</li>
-            <li>✍️ Trinhammer, ML., Grasshof, S., Kessing, L.V., Kjaerstad, H.L., Miskowiak, K. W., Brandt, S.B. (2025). Don't predict if you cannot interpret: Investigating the clinical viability of facial movements for computational diagnostics of bipolar disorder. Neuroscience Applied. In press</li>
-            <li>✍️ Bredgaard, F., Trinhammer, M. L., & Bassignana, E. (2025). The Language of Attachment: Modeling Attachment Dynamics in Psychotherapy. arXiv preprint arXiv:2504.16271.</li>
-            <li>✍️ Trinhammer, M. L., Merrild, A. H., Lotz, J. F., & Makransky, G. (2022). Predicting crime during or after psychiatric care: Evaluating machine learning for risk assessment using the Danish patient registries. Journal of psychiatric research, 152, 194-200.</li>
-        </ul>
-    </section>
+  <section class="pub-list">
+    <!-- Example item -->
+    <article class="pub">
+      <h3 class="pub-title">Title of Paper</h3>
+      <p class="pub-meta">Author A, Author B, M. L. Trinhammer (2024)</p>
+      <p class="pub-venue">Journal / Conference</p>
+      <p class="pub-links">
+        <a href="#" class="small-link">PDF</a>
+        <a href="#" class="small-link">DOI</a>
+        <a href="#" class="small-link">Code</a>
+      </p>
+    </article>
+    <!-- Repeat -->
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Martin Lund Trinhammer</p>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
